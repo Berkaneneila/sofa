@@ -1,0 +1,36 @@
+.cartblog{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232, 230, 227);
+
+ 
+   
+   
+
+
+}
+.contentblog{
+      flex-grow: 1;
+
+  position: relative;
+  top: 15vh;
+  
+
+
+
+ 
+
+
+ 
+}
+.imageblogdiv{
+
+    flex-grow: 1;
+
+
+}
+.imageblog{
+    width: 50vh ;
+    height: 60vh;
+    margin: 20px;
+}

@@ -1,0 +1,47 @@
+.content-footer{
+    position: relative;
+    top: 80vh;
+    background-color: white;
+
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.right-footer {
+  
+    padding: 60px;
+    
+   
+    
+
+}
+.left-footer{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 60vh;
+    margin: 10vh;
+   
+    
+  
+}
+#writing{
+    color: grey;
+   
+}
+.logos-footer{
+    display: flex;
+    gap: 5px;
+   
+}
+.logose{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius:20px ;
+       
+ 
+}
+.logose:hover{
+    background-color: green;
+}

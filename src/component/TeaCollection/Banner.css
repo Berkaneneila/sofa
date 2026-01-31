@@ -1,0 +1,122 @@
+.banner-section {
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.banner-text {
+  flex: 1;
+  z-index: 2;
+}
+
+.banner-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.banner-text p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.banner-image {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+.banner-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%);
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+@media (max-width: 968px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .banner-text h1 {
+    font-size: 36px;
+  }
+  
+  .banner-text p {
+    font-size: 16px;
+  }
+  
+  .hero-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 40px 20px;
+  }
+  
+  .banner-text h1 {
+    font-size: 28px;
+  }
+  
+  .banner-text p {
+    font-size: 15px;
+  }
+  
+  .hero-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section {
+    padding: 30px 15px;
+  }
+  
+  .banner-text h1 {
+    font-size: 24px;
+  }
+  
+  .banner-text p {
+    font-size: 14px;
+  }
+  
+  .hero-image {
+    height: 200px;
+  }
+}

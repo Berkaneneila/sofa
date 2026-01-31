@@ -1,0 +1,17 @@
+.cartcollection {
+  display: flex;
+  flex-direction: column; /* image au-dessus, texte en dessous */
+  align-items: center;    /* centre horizontalement */
+  justify-content: center; /* centre verticalement si tu donnes une hauteur */
+  text-align: center; 
+  padding: 10px;
+}
+
+.imagecartdiv {
+  margin-bottom: 10px; /* espace entre l’image et le titre */
+}
+
+.imagecart {
+  width: 40vh;  /* ajuste la taille */
+  height: auto;
+}

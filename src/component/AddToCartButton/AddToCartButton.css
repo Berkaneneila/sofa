@@ -1,0 +1,167 @@
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #2c5530, #4a7c59);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  justify-content: center;
+  min-width: 140px;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(44, 85, 48, 0.3);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0);
+}
+
+.add-to-cart-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.add-to-cart-btn i {
+  font-size: 0.9rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #2c5530;
+}
+
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #2c5530;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.quantity-btn:hover:not(:disabled) {
+  background: #4a7c59;
+  transform: scale(1.1);
+}
+
+.quantity-btn:active {
+  transform: scale(0.95);
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.quantity {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c5530;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Variants */
+.add-to-cart-btn.small {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  min-width: 120px;
+}
+
+.add-to-cart-btn.large {
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  min-width: 160px;
+}
+
+.add-to-cart-btn.outline {
+  background: transparent;
+  color: #2c5530;
+  border: 2px solid #2c5530;
+}
+
+.add-to-cart-btn.outline:hover:not(:disabled) {
+  background: #2c5530;
+  color: white;
+}
+
+.quantity-controls.small {
+  padding: 6px;
+  gap: 8px;
+}
+
+.quantity-controls.small .quantity-btn {
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
+}
+
+.quantity-controls.large {
+  padding: 12px;
+  gap: 16px;
+}
+
+.quantity-controls.large .quantity-btn {
+  width: 36px;
+  height: 36px;
+  font-size: 0.9rem;
+}
+
+/* Animation for adding to cart */
+@keyframes addToCart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.add-to-cart-btn.added {
+  animation: addToCart 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .add-to-cart-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    min-width: 120px;
+  }
+  
+  .quantity-controls {
+    padding: 6px;
+    gap: 8px;
+  }
+  
+  .quantity-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+}
